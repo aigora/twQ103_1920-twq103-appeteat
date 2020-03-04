@@ -1,11 +1,13 @@
-# Título del trabajo
+# APPETEAT
 
-Descripción breve del proyecto a realizar (2-3 frases).
+¿Te lo llevamos o vienes? Appeteat es un programa que te ofrece comida a domicilio o recogida en cualquier restaurante de tu ciudad, además de hacer reservas en tus establecimientos favoritos.
 
 ## Integrantes del equipo
 
-Nombres, apellidos, y usuario GitHub de los integrantes del equipo.
+Alicia Gutierrez Linares (aligutli)
+Elena Pascual Calvo (elepascu)
+Carlos Paraled Sainero (parsai2)
 
 ## Objetivos del trabajo
 
-Lista de los objetivos que se persiguen con el trabajo propuesto.
+El programa ofrece a los usuarios un servicio a domicilio, recogida o reservas en los restaurantes de la ciudad. Distinguiendo según su zona para saber, el tiempo que les llevará, o de los establecimientos más cercanos.
