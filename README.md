@@ -4,7 +4,7 @@
 
 ## Integrantes del equipo
 
-Alicia Gutierrez Linares (aligutli)
+Alicia Gutierrez Linares (aligutli) 
 Elena Pascual Calvo (elepascu)
 Carlos Paraled Sainero (parsai2)
 
