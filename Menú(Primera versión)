@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	char usuario[50], contrasena1[50], contrasena2[50];
+	int result, opcion, zona, restaurantercz1, restaurantercz2, restaurantercz3, reserva, restaurantel;
+	printf("Le damos la bienvenida a Appeteat.\n");
+	printf("Para comenzar introduzca su nombre de usuario:");
+	gets(usuario);
+	printf("El nombre que ha introducido es %s\n", usuario);
+	do{
+		printf("Introduzca una clave:");
+		gets(contrasena1);
+		printf("Introduzca otra vez su clave:");
+		gets(contrasena2);
+		result = strcmp(contrasena1, contrasena2);
+	} while(result != 0);
+	printf("Escoja:\n1 - Recoger\n2 - Reservar\n3 - Llevar\n");
+	scanf("%d", &opcion);
+	switch(opcion){
+		case 1:
+			printf("¿En que zona quieres recogerlo?\nZona 1: Centro\nZona 2: Norte\nZona 3: Sur\n");
+			scanf("%d", &zona);
+			switch(zona){
+				case 1:
+					printf("¿Que restaurante prefiere? En esta zona se encuntran:\n1 - Casa Primavera\n2 - Gino's\n3 - Goiko Grill");
+					scanf("%d", &restaurantercz1);
+					break;
+					//aqui pedimos los datos necesarios para la recogida
+				case 2:
+					printf("¿Que restaurante prefiere? En esta zona se encuntran:\n1 - Foster's Hollywood\n2 - Tagliatella\n3 - Subway");
+					scanf("%d", &restaurantercz2);
+					break;
+					//aqui pedimos los datos necesarios para la recogida
+				case 3:
+					printf("¿Que restaurante prefiere? En esta zona se encuntran:\n1 - TGB\n2 - Go Sushi\n3 - Tasty Poke");
+					scanf("%d", &restaurantercz3);
+					break;
+					//aqui pedimos los datos necesarios para la recogida
+				default:
+					printf("Opcion no valida");	
+					//hacer un do while para que lo vuelva a pedir
+					break;
+			}
+		case 2:
+			printf("¿En que restaurante quiere reservar?\n1 - Casa Primavera\n2 - Gino's\n3 - Goiko Grill\n4 - Foster's Hollywood\n5 - Tagliatella\n6 - Subway\n7 - TGB\n8 - Go Sushi\n9 - Tasty Poke\n");
+			scanf("%d", &reserva);
+			printf("Ha elegido la opcion: %d", reserva);
+			break;
+			//aqui pedimos los datos necesarios para reservar
+		case 3:
+			printf("¿Que restaurante prefiere?\n1 - Casa Primavera\n2 - Gino's\n3 - Goiko Grill\n4 - Foster's Hollywood\n5 - Tagliatella\n6 - Subway\n7 - TGB\n8 - Go Sushi\n9 - Tasty Poke\n");
+			scanf("%d", &restaurantel);
+			printf("Ha elegido la opcion: %d\n", restaurantel);
+			//aqui pedimos la direccion y mas datos
+	}
+}
+//poner el default luego
