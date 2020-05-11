@@ -3,7 +3,6 @@
 #include<windows.h>
 //lo del usuario
 //linea 41
-//corregir los 65165161 errores que nos salgan
 struct Tusuario{
 	char nombre[20];
 	char apellido[20];
@@ -21,11 +20,11 @@ struct Tdireccion{
 
 void banner(){
 	printf("     /|    ====   ====  |====== =========== |======     /|   ===========\n");
-    printf("    / |   |    | |    | |            |      |          / |        |     \n");
-    printf("   /__|   |    | |    | |___         |      |___      /__|        |     \n");
-    printf("  /   |   |____| |____| |            |      |        /   |        |     \n");
-    printf(" /    |   |      |      |            |      |       /    |        |     \n");
-    printf("/     |   |      |      |______      |      |______/     |        |     \n");
+	printf("    / |   |    | |    | |            |      |          / |        |     \n");
+	printf("   /__|   |    | |    | |___         |      |___      /__|        |     \n");
+	printf("  /   |   |____| |____| |            |      |        /   |        |     \n");
+	printf(" /    |   |      |      |            |      |       /    |        |     \n");
+	printf("/     |   |      |      |______      |      |______/     |        |     \n");
 }
 
 void lectura(){
