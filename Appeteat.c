@@ -48,6 +48,9 @@ int main(){
 		printf("Introduzca otra vez su clave:");
 		gets(contrasena2);
 		result = strcmp(contrasena1, contrasena2);
+		if(result != 0){
+			printf("Las claves no coinciden");
+		}
 	} while(result != 0);
 	system("cls");
 	do{
