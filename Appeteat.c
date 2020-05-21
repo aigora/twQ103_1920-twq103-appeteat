@@ -427,7 +427,7 @@ int main(){
 						printf("¡Perfecto! Su pedido se ha efectuado correctamente. Su pedido llegara sobre las %d:%d\n", t1, t2);
 						break;
 				}	
-				printf("Introduzca su calle: ");
+				printf("Introduzca su calle (omita los espacios): ");
 				scanf("%s", direccion[1].calle);
 				printf("Portal: ");
 				scanf("%d", &direccion[1].portal);
