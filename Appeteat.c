@@ -11,11 +11,11 @@ struct Tdireccion{
 void banner(){
 	printf("\n");
 	printf("     /|    ====   ====  |====== =========== |======     /|   ===========\n");
-    printf("    / |   |    | |    | |            |      |          / |        |     \n");
-    printf("   /__|   |    | |    | |___         |      |___      /__|        |     \n");
-    printf("  /   |   |____| |____| |            |      |        /   |        |     \n");
-    printf(" /    |   |      |      |            |      |       /    |        |     \n");
-    printf("/     |   |      |      |______      |      |______/     |        |     \n");
+	printf("    / |   |    | |    | |            |      |          / |        |     \n");
+	printf("   /__|   |    | |    | |___         |      |___      /__|        |     \n");
+	printf("  /   |   |____| |____| |            |      |        /   |        |     \n");
+	printf(" /    |   |      |      |            |      |       /    |        |     \n");
+	printf("/     |   |      |      |______      |      |______/     |        |     \n");
 }
 
 
@@ -73,10 +73,10 @@ int main(){
 					do{
 						FILE * fentrada1;
 						fentrada1 = fopen("Restaurantes Zona 1.txt", "r");
-					if(fentrada1 == NULL){
-						printf("Error en la apertura del fichero\n");
-						return 0;
-					}
+						if(fentrada1 == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
 						printf("¿Que restaurante prefiere? En esta zona se encuentran:\n");
 						for(i=0; i<3; i++){
 							fscanf(fentrada1, "%d %s", &n1, r1);
@@ -151,7 +151,7 @@ int main(){
 							printf("Opcion no valida\n");
 						}
 				}while(restaurantecz2 != 1 && restaurantecz2 != 2 && restaurantecz2 != 3);
-					printf("Ha elegido el restaurante : %d", restaurantecz2);
+					printf("Ha elegido el restaurante : %d\n", restaurantecz2);
 					switch(restaurantecz2){
 						case 1:
 							do{
@@ -201,7 +201,7 @@ int main(){
 						if(fentrada3 == NULL){
 							printf("Error en la apertura del fichero\n");
 							return 0;
-					}
+						}
 						printf("¿Que restaurante prefiere? En esta zona se encuentran:\n");
 						for(i=0; i<3; i++){
 							fscanf(fentrada3, "%d %s", &n3, r3);
@@ -281,7 +281,7 @@ int main(){
 					printf("Opcion no valida\n");
 				}
 			} while(reserva != 1 && reserva != 2 && reserva != 3 && reserva != 4 && reserva != 5 && reserva != 6 && reserva != 7 && reserva != 8 && reserva != 9);
-			printf("Ha elegido la opcion: %d", reserva);
+			printf("Ha elegido la opcion: %d\n", reserva);
 			printf("¿A que hora quiere la reserva? ");
 			do{
 				printf("¿A que hora quiere reservar?\n");
@@ -304,8 +304,8 @@ int main(){
 				}
 				printf("¿Que restaurante prefiere?\n");
 				for(i=0; i<9; i++){
-				fscanf(fentrada4, "%d %s", &n4, &r4);
-				printf("%d - %s\n", n4, r4);
+					fscanf(fentrada4, "%d %s", &n4, &r4);
+					printf("%d - %s\n", n4, r4);
 				}
 				fclose(fentrada4);
 				scanf("%d", &restaurantel);
@@ -432,7 +432,7 @@ int main(){
 				scanf("%d", &direccion[1].piso);
 				printf("Letra: ");
 				scanf("%s", direccion[1].letra);
-				printf("Su pedido llegara a: Calle %s Portal %d Piso %d Letra %s", direccion[1].calle, direccion[1].portal, direccion[1].piso, direccion[1].letra);
+				printf("Su pedido llegara a: Calle %s, numero %d, Piso %d %s", direccion[1].calle, direccion[1].portal, direccion[1].piso, direccion[1].letra);
 				banner();
 				return 0;
 			} while(confirmacionDireccion != 1);
@@ -447,7 +447,7 @@ int tiempo1(int h){
 		printf("Introduzca la hora: ");
 		scanf("%d", &h);
 		if(h<0 && h>=24){
-			printf("Por favor, intrduzca una hora real");
+		printf("Por favor, intrduzca una hora real");
 		}
 	} while(h<0 && h>=24);
 	return h;
@@ -457,7 +457,7 @@ int tiempo2(int min){
 		printf("Introduzca los minutos: ");
 		scanf("%d", &min);
 		if(min<0 && min>59){
-			printf("Por favor, introduzca un minuto real");
+		printf("Por favor, introduzca un minuto real");
 		}
 	}while(min<0 && min>59);
 	return min;
